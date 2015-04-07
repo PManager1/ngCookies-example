@@ -11,7 +11,7 @@ angular.module('delCookieStoreExampleApp')
   .controller('MainCtrl', function ($scope, $cookies, $cookieStore) {
 
 
-        console.log('$cookies ', $cookies);
+      console.log('$cookies ', $cookies);
 
       var someSessionObj = { 'innerObj' : 'somesessioncookievalue'};
 
@@ -29,7 +29,7 @@ angular.module('delCookieStoreExampleApp')
         $scope.getEventFromCookie = function() {
             // console.log($cookies.get('event'));
 
-            console.log($cookies.get('obj'));            
+            console.log($cookieStore.get('obj'));            
 
         };
 
